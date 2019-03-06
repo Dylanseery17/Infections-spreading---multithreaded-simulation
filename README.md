@@ -16,7 +16,7 @@ For this project I wanted to be able to use a huge cellular automaton for my sim
   - Chart.js
 
 ## Try out a sample simulaton
-###[https://infections-spreading.herokuapp.com/](https://infections-spreading.herokuapp.com/)
+### [https://infections-spreading.herokuapp.com/](https://infections-spreading.herokuapp.com/)
 
 ## To use
 This program is displayed on a webserver but is currently not hosted, so to run you will need Node.js installed.
