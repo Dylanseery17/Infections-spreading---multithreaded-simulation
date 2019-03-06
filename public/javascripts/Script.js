@@ -23,7 +23,10 @@ var militaryCount= 0;
 //Read file using jquery Live-sever must be enabled
 function readFile()
 {
-  $.get('output.txt', function(data) {
+
+  var file = Math.floor(Math.random() * 4) + 1;
+  //console.log(file);
+  $.get('output'+ file +'.txt', function(data) {
       outputTXT = data;
       generations = outputTXT.split(".");
       draw();
@@ -173,7 +176,7 @@ function draw() {
   militarySize = militarySize.toFixed(2);
   latentSize = latentSize.toFixed(2);
 
-  console.log("the gen is " + generationCounter + "the human % is " + humSize);
+  //console.log("the gen is " + generationCounter + "the human % is " + humSize);
   $("#humanCounter").text("Humans: "+ humSize +" %");
   $("#zombieCounter").text("Zombies: "+ zombieSize +" %");
   $("#deceasedCounter").text("Deceased: "+ deceasedSize +" %");
@@ -438,7 +441,7 @@ deceasedSize = deceasedSize.toFixed(2);
 militarySize = militarySize.toFixed(2);
 latentSize = latentSize.toFixed(2);
 
-console.log("the gen is " + generationCounter + "the human % is " + humSize);
+//console.log("the gen is " + generationCounter + "the human % is " + humSize);
 $("#humanCounter").text("Humans: "+ humSize +" %");
 $("#zombieCounter").text("Zombies: "+ zombieSize +" %");
 $("#deceasedCounter").text("Deceased: "+ deceasedSize +" %");
